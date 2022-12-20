@@ -1,0 +1,75 @@
+body { 
+    background: black;
+    color: white;
+    
+} 
+
+.container_benefits { 
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.benefits { 
+    display: flex;
+    margin: 52px 0;
+    justify-content: center;
+    gap: 18px;
+    text-align: center;
+    
+}
+
+.benefits_title { 
+    color: white;
+    font-size: 19px;
+    max-width: 224px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.benefits_text { 
+    color: white;
+    font-size: 12px;
+    max-width: 247px;
+    line-height: 15px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.benefits_photo { 
+    width: 184px;
+height: 90px;
+    top: 35px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.benefits_elipse{
+    
+width: 367.19px;
+height: 354.08px;
+ position: absolute;
+top: 0px;
+z-index: 2;
+
+opacity: .5;
+background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+
+.benefits_item {
+    display: flex;
+    flex-direction: column;
+    width: 27px;
+height: 27px;
+}
+
+.benefits_img {
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits_name { 
+    justify-content: center;
+    text-align: center;
+}

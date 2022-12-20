@@ -1,0 +1,279 @@
+/* body */
+body{
+    background-color: black;
+}
+
+/* container */
+ .container_explore {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+   
+
+   }
+    
+   /* explore  */
+  .explore_space { 
+    margin:50px 0;
+  }
+
+
+   .explore {
+    max-width: 556px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+   }
+
+   .explore_text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    color: #fff;
+   }
+
+   .explore_outline {
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 30px;
+
+   }
+
+
+
+   /* btn */
+
+   .btn_explore {
+    width: 92px;
+height: 36px;
+ color: #fff;
+  opacity: 1;
+background: linear-gradient(99.99deg, #B936F5 -21.45%, #C64C85 100%, #F1005B 100%);
+border-radius: 8px ;
+cursor: pointer;
+
+   }
+
+   .btn_explore::before,.btn_explore ::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: inherit;
+    transition: all .5s;
+   }
+
+   .btn_explore::after {
+    bottom: -15px;
+    right: -15px;
+    border-width: 3px 0 0 3px;
+   }
+
+   
+.btn_explore:hover {
+  transition: all .5s linear;
+  transform: scale(1.1);
+}
+
+
+
+
+   .btn_explore:before { 
+    top: -15px;
+    left: -15px;
+    border-width: 3px 0 0 3px;
+   }
+
+   .btn_explore:hover:before,.btn_explore:hover::after {
+   width: calc(100% +27px);
+   height: calc(100% + 27px);
+   }
+
+   .bnt {
+    margin: 34px;
+    
+    cursor: pointer;
+   }
+
+   .invisible_btn {
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+    border: none;
+}
+
+.invisible_btn:hover {
+  
+  transition: all .5s linear;
+  transform: scale(1.1);
+}
+
+/* img   */
+
+.cinematic {
+    position: relative;
+  }
+  .cinematic img {
+    width: 421px;
+    height: 492px;
+  }
+  .cinematic__wrap {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    left: 57px;
+    bottom: 60px;
+  }
+  .cinematic__line {
+    max-width: 151px;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+  }
+  .cinematic__header {
+    font-family: var(--fontTitle);
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 32px;
+  }
+  .cinematic__info {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    text-align: center;
+    max-width: 275px;
+  }
+/* people */
+
+
+.explore_people {
+    display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 9px;
+  }
+
+    .people_img img {
+        width: 48px;
+        height: 48px;
+}
+
+.people_img img + img {
+    margin-left: -8px;
+  }
+
+.people_text { 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    
+}
+
+.circle {
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+
+.update {
+    display: flex;
+    justify-content: space-between;
+    gap: 7px;
+    align-content: center;
+   
+}
+
+
+@media (max-width:741px) {
+  .update {
+    flex-direction: column-reverse;
+    gap: 8px;
+    margin: 0 90px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .explore {
+    max-width: 356px;
+  }
+
+  .explore_text {
+    font-size: 20px;
+  }
+
+  .explore_outline {
+    font-size: 12px;
+  }
+
+  .cinematic img {
+    
+   width: 355px;
+   height: 
+   406px;
+  }
+
+  .cinematic__header {
+    font-size: 18px;
+  }
+
+  .cinematic__info {
+    max-width: 231px;
+  }
+
+  .people_img img{ 
+    width: 31px;
+    height: 31px;
+  }
+  
+}
+
+
+
+
+
+@media (max-width:500px) {
+  .update {
+    flex-direction: column-reverse;
+    gap: 8px;
+    margin: 0 90px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .explore {
+    max-width: 356px;
+  }
+
+  .explore_text {
+    font-size: 20px;
+  }
+
+  .explore_outline {
+    font-size: 12px;
+  }
+
+  .cinematic img {
+    
+   width: 355px;
+   height: 
+   406px;
+  }
+
+  .cinematic__header {
+    font-size: 18px;
+  }
+
+  .cinematic__info {
+    max-width: 231px;
+  }
+  
+}

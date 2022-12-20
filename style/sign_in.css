@@ -1,0 +1,97 @@
+body {
+    background: black;
+    color: white;
+}
+
+.container--sign_in {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.h2-aut {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 48px 16px 16px;
+    
+    width: 560px;
+    height: 14px;
+    
+    background: #534686;
+    border-radius: 0px 64px 0px 0px;
+}
+
+.authorization {
+    max-width: 592px;
+    max-height: 392px;
+}
+
+.sign_in-input {
+    font-family: 'Oswald', sans-serif;
+    animation-play-state: running;
+    color: white;
+    border: 2px white;
+    border-radius: 8px;
+    background: transparent;
+    width: 608px;
+    margin-top: 20px;
+    height: 30px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.authorization-btn { 
+margin-top: 10px;
+padding: 6px 12px;
+opacity: .7;
+color: white;
+width: 80px;
+height: 36px;
+cursor: pointer;
+background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
+border-radius: 6px;
+margin-left: 250px;
+}
+
+.authorization-btn:hover {
+    opacity:  1 ;
+    transition: all .4s linear;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes cursor {
+    0%{
+        border-color: white;
+    }
+
+    50%{
+        border-color: transparent;
+    }
+
+    100%{
+        border-color: white;
+    }
+}

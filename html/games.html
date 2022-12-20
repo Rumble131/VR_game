@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style/reset css/reset css.css">
+    <link rel="stylesheet" type="text/css" href="../style/game.css">
+    <link rel="stylesheet" type="text/css" href="../style/style_footer.css">
+    <link rel="stylesheet" type="text/css" href="../style/style_nav.css">
+    <link rel="stylesheet" type="text/css" href="../style/users.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Oswald&family=Roboto+Mono&family=Silkscreen&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <img class="img_nav" src="../src/svg/Ellipse 8.svg">
+                <div class="logo">RealPixel</div>
+                <div class="overlay hidden-overlay"></div>
+                <div class="nav_item">
+                <nav class="nav">
+                    <a class="nav__link" href="../index.html">Home</a>
+                    <a class="nav__link" href="../html/games.html">Games</a>
+                    <a class="nav__link" href="../html/users.html">Users</a>
+                </nav>
+                <div class="header__nav__sing-in__wrap">
+                  <button onclick="singInClick()" class="header__nav__sign-in btn" id="signIn" type="submit">
+                      Sign in
+                    </button>
+                  
+                    <div class="avatar__wrap">
+                      <img class="header__nav__avatar" src="" alt="avatar" />
+                      <div class="avatar-menu">
+                       
+                        <ul class="avatar-menu__wrap">
+                          <li class="avatar-menu__title avatar-myProfile">
+                            My Profile
+                          </li>
+                          <li class="avatar-menu__title avatar-logOut">Log Out</li>
+                        </ul>
+                      </div>
+                      <div class="avatar-menu-overlay"></div>
+                    </div>
+                  </div>
+                  </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="authorization modal modal-hidden">
+                <div class="modal__header">
+                  <h5 class="modal__header__title">Authorization</h5>
+                </div>
+                <form class="modal__form">
+                  <h5 class="modal__title">Sign in</h5>
+                  <input
+                    class="authorization__name modal__input"
+                    type="text"
+                    placeholder="Email or username"
+                  />
+                  <input
+                    class="authorization__password modal__input"
+                    type="password"
+                    placeholder="Password"
+                  />
+                  <button class="btn modal_btn authorization-btn" type="submit">
+                    Sign in
+                  </button>
+                </form>
+              </div>
+                  <button class="burger" type="button" id="NavToggle">
+                      <span class="burger__item">Menu</span>
+                  </button>
+              </div>
+          </div>
+    </header>
+     
+
+    <section class="game_section">
+        <div class="container_game">
+    <div class="games">
+        <h2 class="game_title">VR Games</h2>
+        <div class="media_games"></div>
+        <button class="game_btn" >Add New Card</button>
+        <div class="newGame modal modal-hidden">
+            <div class="modal__header">
+              <h5 class="modal__header__title">Add New Game</h5>
+            </div>
+            <form class="modal__form">
+              <input
+                class="newGame__name modal__input"
+                type="text"
+                placeholder="Game name"
+              />
+              <input
+                class="newGame__description modal__input"
+                type="text"
+                placeholder="Game description"
+              />
+              <input
+                class="newGame__review modal__input"
+                type="text"
+                placeholder="Game review"
+              />
+              <input
+                class="newGame__image modal__input"
+                type="text"
+                placeholder="Game image"
+              />
+              <button class="btn modal_btn realities-btn" type="submit">
+                Add New Game
+              </button>
+            </form>
+          </div>
+        <button class="game_selector"><select class="select">
+        
+             <option class="option_select" value="date">By Date</option >
+             <option class="option_select" value="popularity">Last First</option >
+             <option class="option_select" value="rate">New First</option >
+        </select> </button>
+        </div>
+        <div class="game_card">
+            <ul class="game_list">
+                <li class="game_item">
+                    
+                    <img class="game_img" src="../src/Image/games.png" alt="">
+                    <div class="game_info">
+                           <div class="card_info-game"></div>
+                    <h5 class="game_caption">game name</h5>
+                    <h6 class="game_caption">game Description
+                        A Network of 3D virtual worlds focused on  </h>
+                          <div class="card_info-users"></div>
+                        <h5 class="game_caption">User name</h5>
+                        <h6 class="game_caption">user Description</h6>
+                </div>
+                </li>
+                <li class="game_item">
+                    
+                    <img class="game_img" src="../src/Image/games.png" alt="">
+                    <div class="game_info">
+                           <div class="card_info-game">
+                    <h5 class="game_caption">game name</h5>
+                    <h6 class="game_caption">game Description
+                        A Network of 3D virtual worlds focused on  </h>
+                         </div> 
+                          <div class="card_info-users">
+                        <h5 class="game_caption">User name</h5>
+                        <h6 class="game_caption">user Description</h6>
+                        </div>
+                </div>
+                </li>
+                <li class="game_item">
+                    
+                    <img class="game_img" src="../src/Image/games.png" alt="">
+                    <div class="game_info">
+                           <div class="card_info-game">
+                    <h5 class="game_caption">game name</h5>
+                    <h6 class="game_caption">game Description
+                        A Network of 3D virtual worlds focused on  </h>
+                        </div>
+                          <div class="card_info-users">
+                        <h5 class="game_caption">User name</h5>
+                        <h6 class="game_caption">user Description</h6></div>
+                </div>
+                </li>
+                <li class="game_item">
+                    
+                    <img class="game_img" src="../src/Image/games.png" alt="">
+                    <div class="game_info">
+                           <div class="card_info-game">
+                    <h5 class="game_caption">game name</h5>
+                    <h6 class="game_caption">game Description
+                        A Network of 3D virtual worlds focused on  </h>
+                        </div>
+                          <div class="card_info-users">
+                        <h5 class="game_caption">User name</h5>
+                        <h6 class="game_caption">user Description</h6>
+                        </div>
+                </div>
+                </li>
+                <li class="game_item">
+                    
+                    <img class="game_img" src="../src/Image/games.png" alt="">
+                    <div class="game_info">
+                           <div class="card_info-game">
+                    <h5 class="game_caption">game name</h5>
+                    <h6 class="game_caption">game Description
+                        A Network of 3D virtual worlds focused on  </h>
+                        </div>
+                          <div class="card_info-users">
+                        <h5 class="game_caption">User name</h5>
+                        <h6 class="game_caption">user Description</h6>
+                        </div>
+                </div>
+                </li>
+                <li class="game_item">
+                    
+                    <img class="game_img" src="../src/Image/games.png" alt="">
+                    <div class="game_info">
+                           <div class="card_info-game">
+                    <h5 class="game_caption">game name</h5>
+                    <h6 class="game_caption">game Description
+                        A Network of 3D virtual worlds focused on  </h>
+                        </div>
+                          <div class="card_info-users">
+                        <h5 class="game_caption">User name</h5>
+                        <h6 class="game_caption">user Description</h6>
+                        </div>
+                </div>
+                </li>
+                <li class="game_item">
+                    
+                    <img class="game_img" src="../src/Image/games.png" alt="">
+                    <div class="game_info">
+                           <div class="card_info-game">
+                    <h5 class="game_caption">game name</h5>
+                    <h6 class="game_caption">game Description
+                        A Network of 3D virtual worlds focused on  </h>
+                        </div>
+                          <div class="card_info-users">
+                        <h5 class="game_caption">User name</h5>
+                        <h6 class="game_caption">user Description</h6>
+                        </div>
+                </div>
+                </li>
+                <li class="game_item">
+                    
+                    <img class="game_img" src="../src/Image/games.png" alt="">
+                    <div class="game_info">
+                           <div class="card_info-game">
+                    <h5 class="game_caption">game name</h5>
+                    <h6 class="game_caption">game Description
+                        A Network of 3D virtual worlds focused on  </h>
+                        </div>
+                          <div class="card_info-users">
+                        <h5 class="game_caption">User name</h5>
+                        <h6 class="game_caption">user Description</h6>
+                        </div>
+                </div>
+                </li>
+                <li class="game_item">
+                    
+                    <img class="game_img" src="../src/Image/games.png" alt="">
+                    <div class="game_info">
+                           <div class="card_info-game">
+                    <h5 class="game_caption">game name</h5>
+                    <h6 class="game_caption">game Description
+                        A Network of 3D virtual worlds focused on  </h>
+                        </div>
+                          <div class="card_info-users">
+                        <h5 class="game_caption">User name</h5>
+                        <h6 class="game_caption">user Description</h6>
+                        </div>
+                </div>
+                </li>
+                <li class="game_item">
+                    
+                    <img class="game_img" src="../src/Image/games.png" alt="">
+                    <div class="game_info">
+                           <div class="card_info-game">
+                    <h5 class="game_caption">game name</h5>
+                    <h6 class="game_caption">game Description
+                        A Network of 3D virtual worlds focused on  </h>
+                        </div>
+                          <div class="card_info-users">
+                        <h5 class="game_caption">User name</h5>
+                        <h6 class="game_caption">user Description</h6>
+                        </div>
+                </div>
+                </li>
+                <li class="game_item">
+                    
+                    <img class="game_img" src="../src/Image/games.png" alt="">
+                    <div class="game_info">
+                           <div class="card_info-game">
+                    <h5 class="game_caption">game name</h5>
+                    <h6 class="game_caption">game Description
+                        A Network of 3D virtual worlds focused on  </h>
+                        </div>
+                          <div class="card_info-users">
+                        <h5 class="game_caption">User name</h5>
+                        <h6 class="game_caption">user Description</h6>
+                        </div>
+                </div>
+                </li>
+                <li class="game_item">
+                    
+                    <img class="game_img" src="../src/Image/games.png" alt="">
+                    <div class="game_info">
+                           <div class="card_info-game">
+                    <h5 class="game_caption">game name</h5>
+                    <h6 class="game_caption">game Description
+                        A Network of 3D virtual worlds focused on  </h>
+                        </div>
+                          <div class="card_info-users">
+                        <h5 class="game_caption">User name</h5>
+                        <h6 class="game_caption">user Description</h6>
+                        </div>
+                </div>
+                </li>
+              
+
+
+            </ul>
+        </div>
+    
+    
+  <div class="btn_list">
+    <ul class="ul_btn" >
+        <li>
+            
+            <button class="btn_back"><img src="../src/svg/back.png" alt=""></button>
+            <button class="btn-1">1</button>
+            <button class="btn-2">2</button>
+            <button class="btn-3">...</button>
+            <button class="btn-4">9</button>
+            <button class="btn-5">10</button>
+            <button class="btn_next"><img src="../src/svg/page/ic/carat/ic/carat/ic/carat/next.png" alt=""></button>
+        
+        </li>
+    </ul>
+</div>
+</div>
+             
+    <section class="footer_section">
+        <footer class="footer">
+            <h1 class="footer_text">Explore product in  new way</h1>
+            <p class="footer_outline">We specialize in creating visual identities for products and branda in your company.</p>
+           <div class="util_footer">
+            <input class="footer_input" type="email" required placeholder="Your Email">
+            <button class="btn_footer" href="#">Start</button>
+            </div>
+        </footer>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../JS/burger.js"></script>
+    <script src="../JS/singIn.js"></script>
+    <script src="../JS/add_game.js"></script>
+    <script src="../JS/authorization.js"></script>
+    
+</body>
+</html>
